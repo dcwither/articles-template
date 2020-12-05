@@ -1,0 +1,34 @@
+{
+  "name": "@dcwither/articles",
+  "version": "1.0.0",
+  "description": "my blog articles",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "lint": "prettier --ignore-path=.gitignore **/*.md",
+    "lint:fix": "npm run lint -- --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,scss,md}": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcwither/articles.git"
+  },
+  "author": "Devin Witherspoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dcwither/articles/issues"
+  },
+  "homepage": "https://github.com/dcwither/articles#readme",
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2"
+  }
+}
