@@ -8,4 +8,4 @@
 
 ## Opinion
 
-## Big Ideas
+## Big Ideas!
